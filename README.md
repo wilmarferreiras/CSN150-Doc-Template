@@ -33,6 +33,6 @@ Note your problems or errors here.  Google any error you may come across, and no
 
 
 ## Arduino idle installment IMG:
-![This is an image of Arduino idle installed locally on my computer]("C:\Users\ferre\OneDrive\Pictures\Screenshots\Screenshot 2025-05-04 143254.png")
+![This is an image of Arduino idle installed locally on my computer](C:\Users\ferre\OneDrive\Pictures\Screenshots\Screenshot 2025-05-04 143254.png)
 
 
