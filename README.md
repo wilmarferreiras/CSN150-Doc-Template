@@ -19,14 +19,43 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 
 
 ## Steps I followed
-1. Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
-
+Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
+1. 
 ## Problems
 Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
 
-### Example Problem
-1. Arduino code will not load on ESP32 Cam.
-   Answer: Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
+### Problem 1
+[PYI-19228:WARNING] Failed to remove temporary directory: C:\Users\atswf\AppData\Local\Temp\_MEI192282
+Sketch uses 294394 bytes (9%) of program storage space. Maximum is 3145728 bytes.
+Global variables use 20576 bytes (6%) of dynamic memory, leaving 307104 bytes for local variables. Maximum is 327680 bytes.
+esptool.py v4.8.1
+Serial port COM3
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32: No serial data received.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html
+Failed uploading: uploading error: exit status 2
+
+## Atemps solution 
+### Problem 1
+
+* Manually restarted the esp32 cam with buttons
+
+* Chat GPT Powershell restart cmd:
+   [System.IO.Ports.SerialPort]::getportnames()  # List available ports
+
+   $port = new-Object System.IO.Ports.SerialPort COM3,115200,None,8,one
+   $port.Open()
+   $port.WriteLine("import machine; machine.reset()")
+   $port.Close()
+
+* Changed USB to Micro cable
+
+* Tried on two different computers 
+
+## Solutions
+### problem 1
+
 
 
 ## Final Report
